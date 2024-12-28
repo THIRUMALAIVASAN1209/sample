@@ -1,16 +1,197 @@
-<html>
-  <head>
-    <link rel="stylesheet" href="15f.css">
-  </head>
-  <body>
-    <div class="product-container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+  margin: 0px;
+  background-color: black;
+}
+.main{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+}
+.main img{
+  width: 100%;
+  height: 100%;
+  
+}
+
+.s1{
+  position: absolute;
+  top: 20px;
+  left: 140px;
+}
+
+.s1 img{
+  width: 170px;
+}
+
+.s2{
+  position: absolute;
+  top: 250px;
+  left: 500px;
+  color: azure;
+  font-size: 28px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.s1 h1,p{
+  margin: 20px;
+}
+
+h1{
+  margin: 0px;
+}
+
+.s2 p{
+  font-size: 20px;
+}
+
+.s3{
+  position: absolute;
+  
+}
+.s3 input{
+  width: 330px;
+  height: 50px;
+  background-color: rgba(29, 28, 28, 0.8);
+  color: azure;
+  border: solid 1px rgb(97, 97, 97);
+  border-radius: 4px;
+  padding-left: 16px;
+  
+}
+.s3 ::placeholder{
+  font-size: larger;
+  color: rgb(252, 252, 252);
+}
+
+.s3 button{
+  width: 210px;
+  height: 54px;
+  background-color: rgb(220, 2, 2);
+  font-size: 22px;
+  color: azure;
+  border: none;
+  border-radius: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+.s3 button:hover{
+  opacity: 0.9;
+}
+.s3 button:active{
+  opacity: 0.8;
+}
+.s4{
+  position: absolute;
+  top: 25px;
+  right: 170px;
+}
+
+.s4 select{
+  width: 120px;
+  height: 30px;
+  background-color: rgba(29, 28, 28, 0.8);
+  color: azure;
+  border: solid 1px rgb(97, 97, 97);
+  border-radius: 4px;
+  padding-left: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.s4 button{
+  background-color: rgb(220, 2, 2);
+  font-size: 14px;
+  color: azure;
+  border: none;
+  border-radius: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 30px;
+  width: 70px;
+  margin-left: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+span{
+  color: red;
+  font-size: 14px;
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="main">
+    <img src="https://assets.nflxext.com/ffe/siteui/vlv3/4d2c5849-b306-4884-9036-6211f7ee0178/web/IN-en-20240930-TRIFECTA-perspective_1e1ca6cd-9e2d-4e9d-9e4b-ba0c2d3a0e31_large.jpg" alt="" style="filter: brightness(35%);">
+    <div class="s1">
+      <img src="images/Logonetflix.png.png" alt="">
+    </div>
+
+    <div class="s2">
       
-      <div class="promotion">20% OFF</div>
-      <div class="bottom-overlay">
-        <button class="add-to-cart-button">
-          Add to Cart
-        </button>
+
+      <h1>Unlimited movies, TV</h1>
+      <h1>shows and more</h1>
+      <p>Starts at ₹149. Cancel at any time.</p>
+      <p style="font-size: 15px; margin-top: 40px;">Ready to watch? Enter your email to create or restart your membership.</p>
+      <div class="s3">
+        <table>
+          <tr>
+            <td>
+              <input type="email" placeholder="Email address" id="email">
+              
+            </td>
+            <td>
+              <button onclick="submit(event)">Get Started  ></button>
+            </td>
+          </tr>
+          <tr>
+            <td><span id="invalid-email"></span></td>
+          </tr>
+        </table>
       </div>
     </div>
-  </body>
+    <div class="s4">
+      <table>
+        <tr>
+        </table>
+      </div>
+    </div>
+    <div class="s4">
+      <table>
+        <tr>
+          <td>
+            <select name="" id="">
+              <option value="">English</option>
+              <option value="">தமிழ்</option>
+              <option value="">हिन्दी</option>
+              <option value="">తెలుగు</option>
+            </select>
+          </td>
+          <td>
+            <button onclick="openSignInPage()">Sign in</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+  <script src="netflix_script.js"></script>
+
+</body>
+
+
+
 </html>
